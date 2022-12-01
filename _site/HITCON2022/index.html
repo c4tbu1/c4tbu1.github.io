@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>HITCON 2022 &#8211; c4tbu1</title>
+    <meta name="description" content="Simple Jekyll theme for your blog by Taylan Tatlı.">
+    <meta name="keywords" content="jekyll, ramme, blog, about, theme">
+    <link rel="canonical" href="http://localhost:4000/HITCON2022/">
+        <!-- Twitter Cards -->
+    <meta name="twitter:title" content="HITCON 2022">
+    <meta name="twitter:description" content="Simple Jekyll theme for your blog by Taylan Tatlı.">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="http://localhost:4000/assets/img/Logo.png">
+    <!-- Open Graph -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="HITCON 2022">
+    <meta property="og:description" content="Simple Jekyll theme for your blog by Taylan Tatlı.">
+    <meta property="og:url" content="http://localhost:4000/HITCON2022/">
+    <meta property="og:site_name" content="c4tbu1">
+    <meta property="og:image" content="http://localhost:4000/assets/img/Logo.png">
+
+    
+    
+    <!-- Handheld -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://localhost:4000/assets/img/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/assets/img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/assets/img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/assets/img/favicon/apple-touch-icon-144x144.png">
+    <link rel="icon" type="image/png" href="http://localhost:4000/assets/img/favicon/favicon.png">
+    <link rel="shortcut icon" href="http://localhost:4000/assets/img/favicon/favicon.ico">
+    <!-- Feed -->
+    <link rel="alternate" type="application/rss+xml" title="c4tbu1" href="http://localhost:4000/feed.xml" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/main.css">
+</head>
+
+
+<body>
+        <nav class="nav">
+        <ul class="list">
+            
+				    
+				    <li class="item"><a class="link" href="http://localhost:4000/" >Home</a></li>
+				
+				    
+				    <li class="item"><a class="link" href="http://localhost:4000/blog/" >Blog</a></li>
+				
+				    
+				    <li class="item"><a class="link" href="http://localhost:4000/projects/" >Projects</a></li>
+				
+				    
+				    <li class="item"><a class="link" href="http://localhost:4000/about/" >About</a></li>
+				
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+        <div class="title">
+            <h1>HITCON 2022</h1>
+            <h4>28 Nov 2022</h4>
+        </div>
+        <div class="article">
+            <section id="table-of-contents" class="toc">
+  <header>
+    <h3><i class="fa fa-book"></i> Contents</h3>
+  </header>
+<div id="drawer">
+<ul id="markdown-toc">
+  <li><a href="#hitcon-ctf-2022" id="markdown-toc-hitcon-ctf-2022">HITCON CTF 2022</a>    <ul>
+      <li><a href="#babysss---crypto---94-solves" id="markdown-toc-babysss---crypto---94-solves">BabySSS - Crypto - 94 solves</a>        <ul>
+          <li><a href="#description" id="markdown-toc-description">Description</a></li>
+          <li><a href="#solution" id="markdown-toc-solution">Solution</a></li>
+        </ul>
+      </li>
+      <li><a href="#secret---crypto---41-solves" id="markdown-toc-secret---crypto---41-solves">Secret - Crypto - 41 solves</a>        <ul>
+          <li><a href="#description-1" id="markdown-toc-description-1">Description</a></li>
+          <li><a href="#solution-1" id="markdown-toc-solution-1">Solution</a>            <ul>
+              <li><a href="#recover-modulus-p" id="markdown-toc-recover-modulus-p">Recover modulus p</a></li>
+              <li><a href="#recover-modulus-n" id="markdown-toc-recover-modulus-n">Recover modulus N</a></li>
+              <li><a href="#decrypting-flag" id="markdown-toc-decrypting-flag">Decrypting flag</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#rce---web---157-solves" id="markdown-toc-rce---web---157-solves">RCE - Web - 157 solves</a>        <ul>
+          <li><a href="#solution-2" id="markdown-toc-solution-2">Solution</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+  </div>
+</section>
+<!-- /#table-of-contents -->
+
+<h1 id="hitcon-ctf-2022">HITCON CTF 2022</h1>
+
+<h2 id="babysss---crypto---94-solves">BabySSS - Crypto - 94 solves</h2>
+<h3 id="description">Description</h3>
+<blockquote>
+  <p>I implemented a toy Shamir’s Secret Sharing for fun. Can you help me check is there any issues with this?</p>
+
+  <p>Author: maple3142</p>
+</blockquote>
+
+<div><a href="https://github.com/m1dm4n/CTF-WriteUp/blob/main/2022/HITCONCTF2022/babysss/babysss-1068a45edf321eee75c9ceb3241a9941ab8bdc07.tar.gz" class="btn">Attachments</a></div>
+
+<h3 id="solution">Solution</h3>
+<p>First look at the source file:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">SystemRandom</span>
+<span class="kn">from</span> <span class="nn">Crypto.Cipher</span> <span class="kn">import</span> <span class="n">AES</span>
+<span class="kn">from</span> <span class="nn">hashlib</span> <span class="kn">import</span> <span class="n">sha256</span>
+<span class="kn">from</span> <span class="nn">secret</span> <span class="kn">import</span> <span class="n">flag</span>
+
+<span class="n">rand</span> <span class="o">=</span> <span class="n">SystemRandom</span><span class="p">()</span>
+
+
+<span class="k">def</span> <span class="nf">polyeval</span><span class="p">(</span><span class="n">poly</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">sum</span><span class="p">([</span><span class="n">a</span> <span class="o">*</span> <span class="n">x</span><span class="o">**</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">poly</span><span class="p">)])</span>
+
+
+<span class="n">DEGREE</span> <span class="o">=</span> <span class="mi">128</span>
+<span class="n">SHARES_FOR_YOU</span> <span class="o">=</span> <span class="mi">8</span>  <span class="c1"># I am really stingy :)
+</span>
+<span class="n">poly</span> <span class="o">=</span> <span class="p">[</span><span class="n">rand</span><span class="p">.</span><span class="n">getrandbits</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">DEGREE</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)]</span>
+<span class="n">shares</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">SHARES_FOR_YOU</span><span class="p">):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">rand</span><span class="p">.</span><span class="n">getrandbits</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">polyeval</span><span class="p">(</span><span class="n">poly</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+    <span class="n">shares</span><span class="p">.</span><span class="n">append</span><span class="p">((</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="n">shares</span><span class="p">)</span>
+
+<span class="n">secret</span> <span class="o">=</span> <span class="n">polyeval</span><span class="p">(</span><span class="n">poly</span><span class="p">,</span> <span class="mh">0x48763</span><span class="p">)</span>
+<span class="n">key</span> <span class="o">=</span> <span class="n">sha256</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">secret</span><span class="p">).</span><span class="n">encode</span><span class="p">()).</span><span class="n">digest</span><span class="p">()[:</span><span class="mi">16</span><span class="p">]</span>
+<span class="n">cipher</span> <span class="o">=</span> <span class="n">AES</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">AES</span><span class="p">.</span><span class="n">MODE_CTR</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">cipher</span><span class="p">.</span><span class="n">encrypt</span><span class="p">(</span><span class="n">flag</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="n">cipher</span><span class="p">.</span><span class="n">nonce</span><span class="p">)</span>
+</code></pre></div></div>
+<p>We can see that it’s a Shamir’s Secret Sharing but in on Integer field (\(\mathbb{ZZ}\)). The challenge give us 8 shares and ask us to recover all 129 coefficients of poly.</p>
+
+<p>Each shares give to us have a form like this:
+\((x_i, y_i) = (x_i, a_{129}x_i^{128} + a_{128}x_i^{127}+...+a_{2}x_i + a_{1})\)</p>
+
+<p>So basically for each share \(i\) if you get \(y_i \% x_i\), you will get \(a_1\%x_i\) . With 8 shares you could use <strong>CRT</strong> (Chinese Remainder Theorem) to recover a1 and then subtract that a1, divide \(x_i\) and countinue to do that until you have all 129 coefficients</p>
+
+<p>All coefficients in poly are 64-bit integers and all shared *\(x_i\) are 16-bit integer but we have 8 shares so it’s enough for us to recover each coefficients.</p>
+
+<ul>
+  <li><a href="https://github.com/m1dm4n/CTF-WriteUp/blob/main/2022/HITCONCTF2022/babysss/solve.py">Script</a></li>
+  <li>Output:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="sa">b</span><span class="s">'hitcon{doing_SSS_in_integers_is_not_good_:(}'</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="secret---crypto---41-solves">Secret - Crypto - 41 solves</h2>
+<h3 id="description-1">Description</h3>
+<blockquote>
+  <p>Too many secrets …</p>
+
+  <p>Author: lyc</p>
+</blockquote>
+
+<p><a href="https://github.com/m1dm4n/CTF-WriteUp/blob/main/2022/HITCONCTF2022/secret/secret-e35f5c21e032b74b1ab8110722c593847c2534cb.zip">Attachments</a></p>
+
+<h3 id="solution-1">Solution</h3>
+
+<p>My basic idea is from this latest <a href="https://tl2cents.github.io/2022/11/08/N1CTF-2022-Crypto-Writeups-By-tl2cents/">N1CTF</a>. We will use lattice to recover the modulus \(p\) then recover the modulus \(N\) and decrypt flag.</p>
+
+<h4 id="recover-modulus-p">Recover modulus p</h4>
+
+<p>Why we need recover \(p\) first?</p>
+
+<p>Well you can in see the source code that the public key is \(p + e_i\) and we don’t know \(p\) but we know all \(e_i\). So if we get \(c_i\) (i’th ciphertext) modulo with \(p\), we will get \(c_i\equiv m^{p+e_i}\equiv m^{e_i + 1}\pmod{p}\).</p>
+
+<p>All \(e_i\) are 512-bit integer so it’s too big for us to apply direct power so we will construce a lattice to narrow down the exponents. The lattice is as follows:</p>
+
+\[M = \begin{bmatrix}
+e_1 &amp; 1 &amp; 0 &amp;... &amp; 0 \\
+e_2 &amp; 0 &amp; 1 &amp;... &amp; 0 \\
+\vdots &amp; \vdots &amp; \vdots&amp; \ddots &amp; \vdots \\
+e_{64} &amp; 0 &amp; 0 &amp;... &amp; 1 \\
+\end{bmatrix}\]
+
+<p>And than apply the LLL algorithm to \(M\) will give you all small linear combinations (list \(k_i\)) of all rows in \(M\). Define \(ML=M.LLL()\) and \(ML_i\) will be the i’th row of \(ML\), \(ML_i\) will have the form \([r_i, k_{i1}, k_{i2}, \ldots, k_{i64} ]\) such that:</p>
+
+\[r_i = \sum\limits_{j=1}^{64} e_j*k_{ij}\]
+
+<p>And the most important that \(k_i\) is small so we can apply the power direct to \(c_i\). Since we don’t have \(m_i\), we can’t apply the exponent \(r_i\). But we was given 64 \(c_i\) and \(e_i\) so we can find a pair \(r_i\) and \(r_j\) such that</p>
+
+\[\begin{equation}
+k_1*r_i = k_2*r_j 
+\iff m^{k_1*r_i} = m^{k_2*r_j}
+\iff m^{k_1*r_i} - m^{k_2*r_j} = K*p = 0 \pmod{p} 
+\end{equation}\]
+
+<p>And \(m^{r_{i}}\) can simple calculate since we have linear combination of list \(e_i\):</p>
+
+\[\begin{align}
+e_1*k_{i1} + e_2*k_{i2} + \cdots + e_{64}*k_{i64} &amp;= r_i\\
+\iff m^{e_1*k_{i1} + e_2*k_{i2} + \cdots + e_{64}*k_{i64}} &amp;= m^{r_i} \\
+\end{align}\]
+
+<p>Note: since \(k_{ij}\) can be negative or positive, we should seperate the list \(k_i\) into 2 list: <code class="language-plaintext highlighter-rouge">pos</code> and <code class="language-plaintext highlighter-rouge">neg</code>. The equaltion will like this:</p>
+
+\[m^{r_i} = \
+\begin{cases}
+\frac{m^{epos_1*pos_{i1} + epos_2*pos_{i2} + \cdots + epos_{64}*pos_{i64}}}{m^{eneg_1*neg_{i1} + eneg_2*neg_{i2} + \cdots + eneg_{64}*neg_{i64}}} \ \text{if }r_i &gt; 0 \\
+\frac{m^{eneg_1*neg_{i1} + eneg_2*neg_{i2} + \cdots + eneg_{64}*neg_{i64}}}{m^{epos_1*pos_{i1} + epos_2*pos_{i2} + \cdots + epos_{64}*pos_{i64}}} \ \text{if }r_i &lt; 0
+\end{cases}\]
+
+<p>So if we get enough \(K_i*p\), we could get <strong>GCD</strong> the list of it and get the modulus \(p\)</p>
+
+<p>Code:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">solve</span><span class="p">(</span><span class="n">ess</span><span class="p">,</span> <span class="n">bit_need</span><span class="p">):</span>
+    <span class="n">L</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">ess</span><span class="p">)</span>
+    <span class="n">M1</span> <span class="o">=</span> <span class="n">matrix</span><span class="p">.</span><span class="n">identity</span><span class="p">(</span><span class="n">ZZ</span><span class="p">,</span> <span class="n">L</span><span class="p">)</span>
+    <span class="n">mates</span> <span class="o">=</span> <span class="n">matrix</span><span class="p">(</span><span class="n">ZZ</span><span class="p">,</span> <span class="n">L</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">e</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">ess</span><span class="p">):</span>
+        <span class="n">mates</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">e</span>
+    <span class="n">mat</span> <span class="o">=</span> <span class="n">block_matrix</span><span class="p">(</span><span class="n">ZZ</span><span class="p">,</span> <span class="p">[</span><span class="n">mates</span><span class="p">,</span> <span class="n">M1</span><span class="p">],</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">mat</span> <span class="o">=</span> <span class="n">mat</span><span class="p">.</span><span class="n">LLL</span><span class="p">()</span>
+    <span class="c1"># for row in mat:
+</span>    <span class="c1">#     logging.info(row)
+</span>    <span class="n">ns</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">row1</span><span class="p">,</span> <span class="n">row2</span> <span class="ow">in</span> <span class="n">combinations</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">mat</span><span class="p">.</span><span class="n">rows</span><span class="p">()),</span> <span class="mi">2</span><span class="p">):</span>
+        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">row1</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">abs</span><span class="p">(</span><span class="n">row2</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">k1</span><span class="p">,</span> <span class="n">k2</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="n">a</span> <span class="o">%</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">k2</span> <span class="o">*=</span> <span class="n">a</span> <span class="o">//</span> <span class="n">b</span>
+        <span class="k">elif</span> <span class="n">b</span> <span class="o">%</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">k1</span> <span class="o">*=</span> <span class="n">b</span> <span class="o">//</span> <span class="n">a</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">continue</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">logging</span><span class="p">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s">"Found a good pair: a = </span><span class="si">{</span><span class="n">row1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s">, b = </span><span class="si">{</span><span class="n">row2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+            <span class="n">k1</span> <span class="o">=</span> <span class="n">compute</span><span class="p">(</span><span class="n">row1</span><span class="p">)</span><span class="o">**</span><span class="n">k1</span>
+            <span class="n">k2</span> <span class="o">=</span> <span class="n">compute</span><span class="p">(</span><span class="n">row2</span><span class="p">)</span><span class="o">**</span><span class="n">k2</span>
+            <span class="n">ns</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">mpz</span><span class="p">((</span><span class="n">k1</span> <span class="o">-</span> <span class="n">k2</span><span class="p">).</span><span class="n">numerator</span><span class="p">()))</span>
+        <span class="k">except</span> <span class="nb">ValueError</span><span class="p">:</span>
+            <span class="k">continue</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">ns</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="n">p</span> <span class="o">=</span> <span class="n">gcd</span><span class="p">(</span><span class="o">*</span><span class="n">ns</span><span class="p">)</span>
+            <span class="n">logging</span><span class="p">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s">"Found a gcd with </span><span class="si">{</span><span class="n">p</span><span class="p">.</span><span class="n">bit_length</span><span class="p">()</span><span class="si">}</span><span class="s"> bits"</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">p</span><span class="p">.</span><span class="n">bit_length</span><span class="p">()</span> <span class="o">&lt;=</span> <span class="n">bit_need</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">p</span>
+    <span class="k">return</span> <span class="n">p</span>
+<span class="n">new_es</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">es</span><span class="p">:</span>
+    <span class="n">new_es</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">e</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">p</span> <span class="o">=</span> <span class="n">solve</span><span class="p">(</span><span class="n">new_es</span><span class="p">,</span> <span class="mi">1024</span><span class="p">)</span>
+<span class="n">logging</span><span class="p">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s">"Found p: </span><span class="si">{</span><span class="n">p</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+</code></pre></div></div>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="n">INFO</span><span class="p">]:</span> <span class="n">Found</span> <span class="n">a</span> <span class="n">good</span> <span class="n">pair</span><span class="p">:</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">84</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">42</span>
+<span class="p">[</span><span class="n">INFO</span><span class="p">]:</span> <span class="n">Found</span> <span class="n">a</span> <span class="n">good</span> <span class="n">pair</span><span class="p">:</span> <span class="n">a</span> <span class="o">=</span> <span class="o">-</span><span class="mi">224</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">112</span>
+<span class="p">[</span><span class="n">INFO</span><span class="p">]:</span> <span class="n">Found</span> <span class="n">a</span> <span class="n">good</span> <span class="n">pair</span><span class="p">:</span> <span class="n">a</span> <span class="o">=</span> <span class="o">-</span><span class="mi">224</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">56</span>
+<span class="p">[</span><span class="n">DEBUG</span><span class="p">]:</span> <span class="n">Found</span> <span class="n">a</span> <span class="n">gcd</span> <span class="k">with</span> <span class="mi">29601</span> <span class="n">bits</span>
+<span class="p">[</span><span class="n">INFO</span><span class="p">]:</span> <span class="n">Found</span> <span class="n">a</span> <span class="n">good</span> <span class="n">pair</span><span class="p">:</span> <span class="n">a</span> <span class="o">=</span> <span class="o">-</span><span class="mi">24</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="o">-</span><span class="mi">120</span>
+<span class="p">[</span><span class="n">DEBUG</span><span class="p">]:</span> <span class="n">Found</span> <span class="n">a</span> <span class="n">gcd</span> <span class="k">with</span> <span class="mi">1024</span> <span class="n">bits</span>
+<span class="p">[</span><span class="n">DEBUG</span><span class="p">]:</span> <span class="n">Found</span> <span class="n">p</span><span class="p">:</span> <span class="mi">114123489471785231935784934808971699969409921187241213856052699152350022529522625133249122600992294384493330729753558097354310956450782137388609095123051712848950720360020186805006589596948820312938610934162552701552428320073591829720623902109809701883779673050594202312941073709061911680769616320309646800153</span>
+</code></pre></div></div>
+
+<h4 id="recover-modulus-n">Recover modulus N</h4>
+
+<p>Since we have \(p\), we just need change the argument for the <code class="language-plaintext highlighter-rouge">solve</code> function to list of \(p + e_i\) and number of bits that we need will be \(2048\)</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">new_es</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">es</span><span class="p">:</span>
+    <span class="n">new_es</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">e</span> <span class="o">+</span> <span class="n">p</span><span class="p">)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="n">solve</span><span class="p">(</span><span class="n">new_es</span><span class="p">,</span> <span class="mi">2048</span><span class="p">)</span>
+<span class="n">logging</span><span class="p">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s">"Found n: </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+</code></pre></div></div>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="n">INFO</span><span class="p">]:</span> <span class="n">Found</span> <span class="n">a</span> <span class="n">good</span> <span class="n">pair</span><span class="p">:</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">292</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="p">[</span><span class="n">INFO</span><span class="p">]:</span> <span class="n">Found</span> <span class="n">a</span> <span class="n">good</span> <span class="n">pair</span><span class="p">:</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">66</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">11</span>
+<span class="p">[</span><span class="n">INFO</span><span class="p">]:</span> <span class="n">Found</span> <span class="n">a</span> <span class="n">good</span> <span class="n">pair</span><span class="p">:</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">66</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">198</span>
+<span class="p">[</span><span class="n">DEBUG</span><span class="p">]:</span> <span class="n">Found</span> <span class="n">a</span> <span class="n">gcd</span> <span class="k">with</span> <span class="mi">542856</span> <span class="n">bits</span>
+<span class="p">[</span><span class="n">INFO</span><span class="p">]:</span> <span class="n">Found</span> <span class="n">a</span> <span class="n">good</span> <span class="n">pair</span><span class="p">:</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">66</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="o">-</span><span class="mi">330</span>
+<span class="p">[</span><span class="n">DEBUG</span><span class="p">]:</span> <span class="n">Found</span> <span class="n">a</span> <span class="n">gcd</span> <span class="k">with</span> <span class="mi">408759</span> <span class="n">bits</span>
+<span class="p">[</span><span class="n">INFO</span><span class="p">]:</span> <span class="n">Found</span> <span class="n">a</span> <span class="n">good</span> <span class="n">pair</span><span class="p">:</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">52</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="o">-</span><span class="mi">156</span>
+<span class="p">[</span><span class="n">DEBUG</span><span class="p">]:</span> <span class="n">Found</span> <span class="n">a</span> <span class="n">gcd</span> <span class="k">with</span> <span class="mi">34762</span> <span class="n">bits</span>
+<span class="p">[</span><span class="n">INFO</span><span class="p">]:</span> <span class="n">Found</span> <span class="n">a</span> <span class="n">good</span> <span class="n">pair</span><span class="p">:</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">52</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="o">-</span><span class="mi">104</span>
+<span class="p">[</span><span class="n">DEBUG</span><span class="p">]:</span> <span class="n">Found</span> <span class="n">a</span> <span class="n">gcd</span> <span class="k">with</span> <span class="mi">34762</span> <span class="n">bits</span>
+<span class="p">[</span><span class="n">INFO</span><span class="p">]:</span> <span class="n">Found</span> <span class="n">a</span> <span class="n">good</span> <span class="n">pair</span><span class="p">:</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">52</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="p">[</span><span class="n">DEBUG</span><span class="p">]:</span> <span class="n">Found</span> <span class="n">a</span> <span class="n">gcd</span> <span class="k">with</span> <span class="mi">34762</span> <span class="n">bits</span>
+<span class="p">[</span><span class="n">INFO</span><span class="p">]:</span> <span class="n">Found</span> <span class="n">a</span> <span class="n">good</span> <span class="n">pair</span><span class="p">:</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">52</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">260</span>
+<span class="p">[</span><span class="n">DEBUG</span><span class="p">]:</span> <span class="n">Found</span> <span class="n">a</span> <span class="n">gcd</span> <span class="k">with</span> <span class="mi">2048</span> <span class="n">bits</span>
+<span class="p">[</span><span class="n">DEBUG</span><span class="p">]:</span> <span class="n">Found</span> <span class="n">n</span><span class="p">:</span> <span class="mi">17724789252315807248927730667204930958297858773674832260928199237060866435185638955096592748220649030149566091217826522043129307162493793671996812004000118081710563332939308211259089195461643467445875873771237895923913260591027067630542357457387530104697423520079182068902045528622287770023563712446893601808377717276767453135950949329740598173138072819431625017048326434046147044619183254356138909174424066275565264916713884294982101291708384255124605118760943142140108951391604922691454403740373626767491041574402086547023530218679378259419245611411249759537391050751834703499864363713578006540759995141466969230839</span>
+</code></pre></div></div>
+
+<h4 id="decrypting-flag">Decrypting flag</h4>
+<p>We have \(N\) and \(p\) so we just find \(e\) in the list \(es\) such that \(\mathbb{GCD}(p+e, (p-1)*(q-1))=1\) and then using basic RSA decryption to get flag</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">q</span> <span class="o">=</span> <span class="n">n</span><span class="o">//</span><span class="n">p</span>
+<span class="n">phi</span> <span class="o">=</span> <span class="p">(</span><span class="n">p</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">q</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">es</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">gcd</span><span class="p">(</span><span class="n">p</span><span class="o">+</span><span class="n">e</span><span class="p">,</span> <span class="n">phi</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">continue</span>
+    <span class="n">d</span> <span class="o">=</span> <span class="n">inverse</span><span class="p">(</span><span class="n">p</span><span class="o">+</span><span class="n">e</span><span class="p">,</span> <span class="n">phi</span><span class="p">)</span>
+    <span class="n">logging</span><span class="p">.</span><span class="n">debug</span><span class="p">(</span><span class="s">"FLAG: hitcon{"</span> <span class="o">+</span> <span class="n">long_to_bytes</span><span class="p">(</span>
+        <span class="nb">pow</span><span class="p">(</span><span class="n">cs</span><span class="p">[</span><span class="n">es</span><span class="p">.</span><span class="n">index</span><span class="p">(</span><span class="n">e</span><span class="p">)],</span> <span class="n">d</span><span class="p">,</span> <span class="n">n</span><span class="p">)).</span><span class="n">split</span><span class="p">(</span><span class="sa">b</span><span class="s">'hitcon{'</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">].</span><span class="n">decode</span><span class="p">().</span><span class="n">strip</span><span class="p">())</span>
+    <span class="k">break</span>
+</code></pre></div></div>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="n">DEBUG</span><span class="p">]:</span> <span class="n">FLAG</span><span class="p">:</span> <span class="n">hitcon</span><span class="p">{</span><span class="n">K33p_ev3rythIn9_1nd3p3ndent</span><span class="err">!</span><span class="p">}</span>
+</code></pre></div></div>
+
+<p><a href="https://github.com/m1dm4n/CTF-WriteUp/blob/main/2022/HITCONCTF2022/secret/solve.sage">Script</a></p>
+
+<h2 id="rce---web---157-solves">RCE - Web - 157 solves</h2>
+
+<blockquote>
+  <p>Hello, I am a Random Code Executor, I can execute r4Nd�M JavaScript code for you &gt;&lt;</p>
+
+  <p>Tips:
+Have you ever heard of Infinite monkey theorem? If you click the “RCE!” button enough times you can get the flag 😉</p>
+
+  <p>Author: splitline</p>
+</blockquote>
+
+<p><a href="https://github.com/m1dm4n/CTF-WriteUp/blob/main/2022/HITCONCTF2022/rce/rce-4bc5d3c73ac0fd8c0b098e9e7ac5a2e1c7a2fcf6.zip">Attachment</a></p>
+
+<h3 id="solution-2">Solution</h3>
+<p>app.js:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">express</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">cookieParser</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">cookie-parser</span><span class="dl">'</span><span class="p">)</span>
+<span class="kd">const</span> <span class="nx">crypto</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">crypto</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">randomHex</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="dl">'</span><span class="s1">0123456789abcdef</span><span class="dl">'</span><span class="p">[</span><span class="o">~~</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">16</span><span class="p">)];</span>
+
+<span class="kd">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">cookieParser</span><span class="p">(</span><span class="nx">crypto</span><span class="p">.</span><span class="nx">randomBytes</span><span class="p">(</span><span class="mi">20</span><span class="p">).</span><span class="nx">toString</span><span class="p">(</span><span class="dl">'</span><span class="s1">hex</span><span class="dl">'</span><span class="p">)));</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">'</span><span class="s1">/</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">_</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">res</span><span class="p">.</span><span class="nx">cookie</span><span class="p">(</span><span class="dl">'</span><span class="s1">code</span><span class="dl">'</span><span class="p">,</span> <span class="dl">''</span><span class="p">,</span> <span class="p">{</span> <span class="na">signed</span><span class="p">:</span> <span class="kc">true</span> <span class="p">})</span>
+        <span class="p">.</span><span class="nx">sendFile</span><span class="p">(</span><span class="nx">__dirname</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">/index.html</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">});</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">'</span><span class="s1">/random</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">req</span><span class="p">.</span><span class="nx">signedCookies</span><span class="p">.</span><span class="nx">code</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;=</span> <span class="mi">40</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">const</span> <span class="nx">code</span> <span class="o">=</span> <span class="nx">Buffer</span><span class="p">.</span><span class="k">from</span><span class="p">(</span><span class="nx">req</span><span class="p">.</span><span class="nx">signedCookies</span><span class="p">.</span><span class="nx">code</span><span class="p">,</span> <span class="dl">'</span><span class="s1">hex</span><span class="dl">'</span><span class="p">).</span><span class="nx">toString</span><span class="p">();</span>
+        <span class="k">try</span> <span class="p">{</span>
+            <span class="nx">result</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="nx">code</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">catch</span> <span class="p">{</span>
+            <span class="nx">result</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">(execution error)</span><span class="dl">'</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="nx">res</span><span class="p">.</span><span class="nx">cookie</span><span class="p">(</span><span class="dl">'</span><span class="s1">code</span><span class="dl">'</span><span class="p">,</span> <span class="dl">''</span><span class="p">,</span> <span class="p">{</span> <span class="na">signed</span><span class="p">:</span> <span class="kc">true</span> <span class="p">})</span>
+            <span class="p">.</span><span class="nx">send</span><span class="p">({</span> <span class="na">progress</span><span class="p">:</span> <span class="nx">req</span><span class="p">.</span><span class="nx">signedCookies</span><span class="p">.</span><span class="nx">code</span><span class="p">.</span><span class="nx">length</span><span class="p">,</span> <span class="na">result</span><span class="p">:</span> <span class="s2">`Executing '$</span><span class="p">${</span><span class="nx">code</span><span class="p">}</span><span class="s2">', result = $</span><span class="p">${</span><span class="nx">result</span><span class="p">}</span><span class="s2">`</span> <span class="p">});</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nx">res</span><span class="p">.</span><span class="nx">cookie</span><span class="p">(</span><span class="dl">'</span><span class="s1">code</span><span class="dl">'</span><span class="p">,</span> <span class="nx">req</span><span class="p">.</span><span class="nx">signedCookies</span><span class="p">.</span><span class="nx">code</span> <span class="o">+</span> <span class="nx">randomHex</span><span class="p">(),</span> <span class="p">{</span> <span class="na">signed</span><span class="p">:</span> <span class="kc">true</span> <span class="p">})</span>
+            <span class="p">.</span><span class="nx">send</span><span class="p">({</span> <span class="na">progress</span><span class="p">:</span> <span class="nx">req</span><span class="p">.</span><span class="nx">signedCookies</span><span class="p">.</span><span class="nx">code</span><span class="p">.</span><span class="nx">length</span><span class="p">,</span> <span class="nx">result</span> <span class="p">});</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="mi">5000</span><span class="p">);</span>
+</code></pre></div></div>
+<p>The souce code is short so it just have 2 funtions: home page and random page</p>
+
+<p>The home page <code class="language-plaintext highlighter-rouge">/</code> just have a button and when we click it, the server will send a GET requests to the <code class="language-plaintext highlighter-rouge">/random</code></p>
+
+<p>The random fuction will check if the length of <code class="language-plaintext highlighter-rouge">code</code> in the cookie is greater of equal 40 so it will <code class="language-plaintext highlighter-rouge">unhex</code> and <code class="language-plaintext highlighter-rouge">eval</code> the code and return <code class="language-plaintext highlighter-rouge">result</code> to us else it will random a hex char and append it to <code class="language-plaintext highlighter-rouge">code</code> in cookie</p>
+
+<p>We can’t manipulate the cookie because the signature but we could make the server sign a cookie we need. Just repeatly send a cookie until the next random character is a char we want.</p>
+
+<p>The payload need small than 40 (20 since it’s in hex format) so normal payload won’t work here. My solution is using nest  evaluation(<code class="language-plaintext highlighter-rouge">eval(eval(somthing_here))</code>). Since all the code you eval will directly impact to server so from here have many way to exploit:</p>
+<ul>
+  <li>You could asign the code to a variable and then request again (but you will need a lot cookie)</li>
+  <li>Using <code class="language-plaintext highlighter-rouge">req.query.abcd</code> (<code class="language-plaintext highlighter-rouge">abcd</code> to fit the target length or anything you like). Only need 1 cookie and then request server with <code class="language-plaintext highlighter-rouge">/random?abcd={code_excute}</code></li>
+  <li>…</li>
+</ul>
+
+<p>And send the code to read the flag on the server with your signed cookie.</p>
+
+<p><a href="https://github.com/m1dm4n/CTF-WriteUp/blob/main/2022/HITCONCTF2022/rce/solve.py">Script</a></p>
+
+        </div>
+    </div>
+        <div class="footer">
+        c4tbu1 © 2022 <a href="http://localhost:4000/feed.xml" target="_blank"><i class="fa fa-fw fa-feed"></i></a>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/jquery-1.12.2.min.js"></script>
+<script src="http://localhost:4000/assets/js/jquery.goup.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $.goup({
+        trigger: 500,
+        bottomOffset: 10,
+        locationOffset: 20,
+        containerRadius: 0,
+        containerColor: '#fff',
+        arrowColor: '#000',
+        goupSpeed: 'normal'
+    });
+});
+</script>
+
+
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</body>
+</html>
